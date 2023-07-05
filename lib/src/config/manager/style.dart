@@ -3,36 +3,22 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'font.dart';
 
-TextStyle _getLatoTextStyle(
+TextStyle _getPoppinsTextStyle(
     double fontSize,
     FontWeight fontweight,
     Color color,
     ) {
-  return GoogleFonts.lato(
+  return GoogleFonts.poppins(
     fontSize: fontSize,
     fontWeight: fontweight,
     color: color,
   );
 }
 
-getBodyLargeStyle({double fontSize = AppFontSize.s24, required Color color}) {
-  return _getLatoTextStyle(fontSize, AppFontWeight.bold, color);
-}
-
-getBodyMediumBoldStyle(
-    {double fontSize = AppFontSize.s16, required Color color}) {
-  return _getLatoTextStyle(fontSize, AppFontWeight.semiBold, color);
-}
-
-getBodyMediumRegularStyle(
-    {double fontSize = AppFontSize.s14, required Color color}) {
-  return _getLatoTextStyle(fontSize, AppFontWeight.regular, color);
-}
-
-getBodySmallStyle({double fontSize = AppFontSize.s12, required Color color}) {
-  return _getLatoTextStyle(fontSize, AppFontWeight.medium, color);
+getBodyLargeStyle({double fontSize = AppFontSize.s36, required Color color}) {
+  return _getPoppinsTextStyle(fontSize, AppFontWeight.bold, color);
 }
 
 getButtonLabelStyle({double fontSize = AppFontSize.s12, required Color color}) {
-  return _getLatoTextStyle(fontSize, AppFontWeight.semiBold, color);
+  return _getPoppinsTextStyle(fontSize, AppFontWeight.medium, color);
 }
